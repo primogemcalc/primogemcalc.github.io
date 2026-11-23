@@ -1,0 +1,3 @@
+class SiteFooter extends HTMLElement{connectedCallback(){
+this.innerHTML=`<footer><div class="w"><p><a href="/pity-calculator/">Pity Calculator</a><a href="/weapon-banner-calculator/">Weapon Banner</a><a href="/topup-calculator/">Top-Up Value</a><a href="/wish-converter/">Wish Converter</a></p><p style="margin-top:12px">© ${new Date().getFullYear()} PrimogemCalc. Fan-made tools, not affiliated with or endorsed by HoYoverse. Genshin Impact, Primogems and Genesis Crystals are trademarks of HoYoverse. Rates and prices follow commonly published figures and can change, so check in-game.</p></div></footer>`}}
+customElements.define('site-footer',SiteFooter);

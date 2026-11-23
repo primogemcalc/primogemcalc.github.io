@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://primogemcalc.github.io/sitemap.xml
