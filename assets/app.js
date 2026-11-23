@@ -9,7 +9,7 @@ cur=nx;if(w===W)at=done;if(w>=W&&done>.99999)break}return{at,ex}}
 function res(h){$('#out').innerHTML=h}
 function pity(){const wp=T==='weapon',m=wp?M.wep:M.char,P=m.P,W=v('fates')+Math.floor(v('primos')/160),t=Math.max(1,Math.min(7,v('t')||1)),p=Math.min(v('pity'),P-1),g=+$('#g').value,win=wp?.375:(+$('#cr').value?.55:.5);
 const r=run(m,p,g,t,W,win),worst=(g?P:2*P)+(t-1)*2*P;
-res(`<p class="sub">With ${f(W)} wishes available:</p><div class="big">${(r.at*100).toFixed(1)}%</div><p>chance to get ${t} ${wp?'chosen weapon':'featured 5★'} cop${t>1?'ies':'y'}</p><div class="grid" style="margin-top:16px"><div><h3>${f(r.ex)} wishes</h3><p>average needed (${f(r.ex*160)} Primogems)</p></div><div><h3>${f(worst)} wishes</h3><p>worst case (${f(worst*160)} Primogems)</p></div></div>`)}
+res(`<p class="sub">With ${f(W)} wishes available:</p><div class="big">${(r.at*100).toFixed(1)}%</div><p>chance to get ${t} ${wp?'chosen weapon':'featured 5-star'} cop${t>1?'ies':'y'}</p><div class="grid" style="margin-top:16px"><div><h3>${f(r.ex)} wishes</h3><p>average needed (${f(r.ex*160)} Primogems)</p></div><div><h3>${f(worst)} wishes</h3><p>worst case (${f(worst*160)} Primogems)</p></div></div>`)}
 const PK=[['60 Crystals',.99,60,120],['300 + 30 Crystals',4.99,330,600],['980 + 110 Crystals',14.99,1090,1960],['1980 + 260 Crystals',29.99,2240,3960],['3280 + 600 Crystals',49.99,3880,6560],['6480 + 1600 Crystals',99.99,8080,12960],['Blessing of the Welkin Moon (30 days)',4.99,3000,3000],['Gnostic Hymn battle pass (4 Fates)',9.99,640,640]];
 const FX={USD:1,EUR:.92,GBP:.79,INR:85,PKR:280,CAD:1.37,AUD:1.5};
 function topup(){const c=$('#cur').value,x=FX[c],ft=$('#ft').value==='1';
